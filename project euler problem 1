@@ -7,7 +7,7 @@ var sum=0;
 //Start with 1, divide it by 3 and 5, see if it is a whole number, continue up to 1000.
 //From 1 to 1000
 //a++ means a= a+1
-for (var a=1; a<=1000; a++)
+for (var a=1; a<1000; a++)
 {
       //Divide by 3
       //if its whole number
@@ -16,6 +16,7 @@ for (var a=1; a<=1000; a++)
         //then add to the sum and 
         //go to the next number
             sum+=a;
+            console.log (sum);
       //if not divide by 5
       } else if (a%5==0)
         //If a whole number

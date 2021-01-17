@@ -1,0 +1,27 @@
+//If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+//Find the sum of all the multiples of 3 or 5 below 1000.
+
+//Solution
+//Variable for the sum of all multiples of 3 and 5
+var sum=0;
+//Start with 1, divide it by 3 and 5, see if it is a whole number, continue up to 1000.
+//From 1 to 1000
+//a++ means a= a+1
+for (var a=1; a<=1000; a++)
+{
+      //Divide by 3
+      //if its whole number
+      if (a%3==0)
+      {
+        //then add to the sum and 
+        //go to the next number
+            sum+=a;
+      //if not divide by 5
+      } else if (a%5==0)
+        //If a whole number
+      {   //add to sum
+           sum+=a;
+           console.log (sum);
+        //if not go to the next number
+      }
+}
